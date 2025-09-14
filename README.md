@@ -24,4 +24,4 @@ use npm run dev to run the site then go to its URL to start.
 
 Gatling: After installing gatling, we recorded entering our site, then ran it with various user numbers. The results are here:
 <img width="3662" height="1655" alt="gatling tests paint dashboard" src="https://github.com/user-attachments/assets/2fcfe934-9845-4127-bfba-26ba14f6c0b0" />
-TBD: Find the actual capacity number to then run Load and Stress tests later.
+TBD: Find the actual capacity number to then run Load and Stress tests later. 
