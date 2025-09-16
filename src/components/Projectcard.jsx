@@ -31,7 +31,7 @@ function ProjectCard({
   return (
     <div
       onClick={onClick}
-      className="relative bg-blue-800 rounded-xl shadow-md border border-gray-700 hover:border-blue-500 w-72 overflow-hidden transition cursor-pointer"
+      className="relative bg-cyan-800 rounded-xl shadow-md border border-gray-700 hover:border-blue-500 w-72 overflow-hidden transition cursor-pointer"
     >
       <img
         src={image||"https://placehold.co/400x200/1e1e1e/ffffff?text=Project"}
