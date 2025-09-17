@@ -1,0 +1,8 @@
+The first assert we're making is when we create a new project. If the new project doesn't exist, 
+the rest of the automated run doesn't matter.
+The second assert is to see if the project successfuly changed, because we want to duplicate it.
+We then show that we "accidentally" clear the copy so we need to delete it.
+We then use a weird method of checking if the copy got deleted (we want to show the search bar work)
+but we don't care if it got deleted or not so we use verify.
+We then use storeText into a variable then using it, just to see if that fits the requirement for 3 validations.
+
