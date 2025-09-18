@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
     "stop": "powershell -Command \"try { npx kill-port 5173 -t } catch { Write-Host 'No process found on port 5173' } ; exit 0\""
