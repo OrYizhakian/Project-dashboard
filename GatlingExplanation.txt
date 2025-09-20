@@ -1,0 +1,20 @@
+Gatling:
+Using our pc directly:
+We found that max limit is around 560~, but when trying that times 1.1 we didn't fail.
+However if we choose 580, trying that times 1.1 will start getting failures.
+We're assuming that under small load 580 is a good number, but heavy load lowers us to 560~.
+So for stress test we'll do 580>638>580>638>0 during 4 minutes.
+If we want to distribute even times, ramp will be 10 seconds, and each test will hold for
+38 seconds.
+
+For load we'll just do 522 and expect it to work properly over 5 minutes.
+We can set ramp up time for load test at 30 seconds (and teardown)
+
+We did all that directly through CMD, but when we tried with jenkins it ran differently.
+Using Jenkins to run gatling:
+
+We tried to find jenkins's max limit but failed, and we tried a lot.
+We made the scenarios to work and look like the correct tests, but in the end we didn't succeed in finding max limit.
+Our problem was we got random errors when testing different values, but no value gave us consistent errors.
+
+Our .HAR file was just accessing the site, which triggered 20 requests.

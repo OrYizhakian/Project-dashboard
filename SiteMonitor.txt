@@ -1,0 +1,3 @@
+We used Jenkins plugin called SiteMonitor so it would be easier to monitor our localhost server.
+We trigger it with a jenkins job, and it tries to connect to the server directly.
+We defined it to work every 5 minutes, and the job succeeds or fails depending on the result.
